@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fij {
+  @apply flex justify-center items-center;
+}
+#components-layout-demo-top-side-2 .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+.fij {
+  @apply flex items-center justify-between
+}
+
+.site-layout-background {
+  background: #fff;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-layout .ant-layout-sider{
+  @apply static md:fixed
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-layout.ant-layout-has-sider {
+ @apply flex-col md:flex-row    
+}
+.ant-layout-sider{
+  @apply md:w-[336px] w-full 
+}
+.siderbar{
+  @apply fixed
+}
+.course-item .ant-space-item {
+  @apply shrink-0
+}
+
+.course-item button {
+  @apply px-1
+}
+.absolute-xy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ant-card-cover img {
+  border-radius: 0rem;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(4% + -67px);
+}
+.react-multiple-carousel__arrow--left{
+  left: calc(4% + -67px);
+}
+ .react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+  
+   
+  background: #fff;
+  border-radius: unset;
+}
+ 
+.react-multiple-carousel__arrow::before {
+  color: #CCCBCC;
+  font-size: 3rem;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-layout.ant-layout-has-sider >.ant-layout{
+  @apply w-full
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-layout .ant-layout-sider{
+  @apply w-[336px]
+}
